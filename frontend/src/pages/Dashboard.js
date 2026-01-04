@@ -11,7 +11,7 @@ const Dashboard = () => {
     const [originalUrl, setOriginalUrl] = useState('');
     const [customCode, setCustomCode] = useState('');
     const [createLoading, setCreateLoading] = useState(false);
-    const { user } = useContext(AuthContext);
+    // const { user } = useContext(AuthContext); // Unused
 
     useEffect(() => {
         fetchUrls();

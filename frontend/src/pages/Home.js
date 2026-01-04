@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import api from '../services/api';
 import { FaCopy, FaCheck, FaRocket, FaShieldAlt, FaChartLine } from 'react-icons/fa';
 
@@ -99,8 +99,8 @@ const Home = () => {
                                 <button
                                     onClick={copyToClipboard}
                                     className={`px-6 py-3 rounded-xl font-bold flex items-center gap-2 transition-all ${copied
-                                            ? 'bg-green-100 text-green-700'
-                                            : 'bg-slate-900 text-white hover:bg-slate-800'
+                                        ? 'bg-green-100 text-green-700'
+                                        : 'bg-slate-900 text-white hover:bg-slate-800'
                                         }`}
                                 >
                                     {copied ? <FaCheck /> : <FaCopy />}

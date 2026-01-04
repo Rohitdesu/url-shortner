@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import api from '../services/api';
 import { Link } from 'react-router-dom';
 import { FaCopy, FaTrash, FaChartBar, FaCheck, FaPlus, FaExternalLinkAlt } from 'react-icons/fa';
 import { toast } from 'react-toastify';
-import { AuthContext } from '../context/AuthContext';
+// import { AuthContext } from '../context/AuthContext';
 
 const Dashboard = () => {
     const [urls, setUrls] = useState([]);

@@ -54,7 +54,7 @@ exports.shortenUrl = async (req, res) => {
             });
         }
 
-        const baseUrl = process.env.BASE_URL;
+        const baseUrl = process.env.BASE_URL ? process.env.BASE_URL.replace(/\/$/, '') : '';
         const shortUrl = `${baseUrl}/${shortCode}`;
 
         res.status(201).json({

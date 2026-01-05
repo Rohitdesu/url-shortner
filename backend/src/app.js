@@ -30,6 +30,7 @@ app.get('/', (req, res) => {
 // Routes
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/url', require('./routes/urlRoutes'));
+app.use('/api/health', require('./routes/healthRoutes'));
 
 // Redirect Route (Root level)
 const { redirectUrl } = require('./controllers/urlController');
